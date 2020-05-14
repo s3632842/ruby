@@ -23,3 +23,11 @@
 7. `docker-compose run --rm web rails assets:precompile`
 8. `docker-compose run --rm web rails console`
 9. `docker-compose run --rm web rails test`
+9. `$ git commit -am "Tute 8 Production"`
+
+$ git push
+$ git push heroku
+$ heroku pg:reset DATABASE
+$ heroku run rails db:migrate
+$ heroku run rails db:seed
+$ heroku restart
